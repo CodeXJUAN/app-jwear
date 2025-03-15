@@ -24,11 +24,13 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     scrollView: {
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#f5f5f5',
     },
     header: {
+        height: 80,
         padding: 20,
-        backgroundColor: '#6200ee',
+        justifyContent: 'center',
+        backgroundColor: '#5c5c5d',
     },
     headerText: {
         fontSize: 24,
@@ -36,15 +38,19 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     main: {
+        height: 580,
         padding: 20,
+        justifyContent: 'center',
     },
     mainText: {
         fontSize: 18,
         color: '#000000',
     },
     footer: {
+        height: 80,
         padding: 20,
-        backgroundColor: '#6200ee',
+        justifyContent: 'center',
+        backgroundColor: '#5c5c5d',
     },
     footerText: {
         fontSize: 14,
