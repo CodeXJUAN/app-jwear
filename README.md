@@ -1,50 +1,15 @@
-# Welcome to your Expo app 👋
+# JWEAR APP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an app inspired on a project that i did on class, was a fictional clothing brand, and in the beggining I made it with HTML, CSS and JavaScript.
 
-## Get started
+Now I will try to do the same but with React-Native and Tailwind, and if i can i will have a connection to a database to search for the photos, and to be able to do the log in.
 
-1. Install dependencies
+## Programming Languages
 
-   ```bash
-   npm install
-   ```
+In this ocassion i will use React-Native and Tailwind, because my intention is to do a mobile application.
 
-2. Start the app
+And for the Backend I will use FastAPI with Python to do the connection with the database.
 
-   ```bash
-    npx expo start
-   ```
+## Database
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+I will use a platform named Aiven, that offers free databases with a free plan, and i will create a MySQL database to store the photos and to be able to do the log in.
