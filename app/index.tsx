@@ -1,18 +1,30 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
 
 const App: React.FC = () => {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
                 <View style={styles.header}>
-                    <Text style={styles.headerText}>Welcome to My App</Text>
+                    <Image style={styles.logo}
+                        source={require("./../assets/images/logo entero blanco.png")}
+                    />
                 </View>
-                <View style={styles.main}>
-                    <Text style={styles.mainText}>This is the main content of the app.</Text>
+                <View>
+                    <Image></Image>
+                </View>
+                <View style={styles.div1}>
+                    <Text>Welcome to JWEAR!</Text>
+                    <Text>Your freestyle design in one App</Text>
                 </View>
                 <View style={styles.footer}>
-                    <Text style={styles.footerText}>&copy; 2023 My App. All rights reserved.</Text>
+                    <TouchableOpacity      
+                    style={styles.button}
+                    onPress={() => console.log("Botón presionado")}
+                    >
+                        <Text style={styles.textbutton}>Continue</Text>
+                    </TouchableOpacity>
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -24,36 +36,35 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     scrollView: {
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#ffffff',
+    },
+    logo: {
+        width: 100,
+        height: 100,
     },
     header: {
-        height: 80,
-        padding: 20,
-        justifyContent: 'center',
-        backgroundColor: '#5c5c5d',
-    },
-    headerText: {
-        fontSize: 24,
-        color: '#ffffff',
-        textAlign: 'center',
-    },
-    main: {
-        height: 580,
-        padding: 20,
+        flex: 1,
+        alignItems: 'center',
         justifyContent: 'center',
     },
-    mainText: {
-        fontSize: 18,
-        color: '#000000',
+    div1: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     footer: {
-        height: 80,
-        padding: 20,
+        flex: 1,
         justifyContent: 'center',
-        backgroundColor: '#5c5c5d',
+        alignItems: 'center',
     },
-    footerText: {
-        fontSize: 14,
+    button : {
+        backgroundColor: '#000000',
+        width: 200,
+        padding: 10,
+        margin: 10,
+        borderRadius: 10,
+    },
+    textbutton: {
         color: '#ffffff',
         textAlign: 'center',
     },
