@@ -1,9 +1,8 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
+import { ScrollView, TouchableOpacity} from 'react-native';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import Slider from '@/app/components/Slider';
 import { ImageSlider } from '@/app/data/SliderData';
-
 import { NavigationProp } from '@react-navigation/native';
 
 const Welcome = ({ navigation }: { navigation: NavigationProp<any> }) => {
@@ -11,7 +10,7 @@ const Welcome = ({ navigation }: { navigation: NavigationProp<any> }) => {
         <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
             <View style={styles.header}>
                 <Image style={styles.logo}
-                    source={require("@/assets/images/logo_entero_blanco.png")}
+                    source={require("./../../assets/images/logo_entero_blanco.png")}
                 />
             </View>
             <View style={styles.div1}>
