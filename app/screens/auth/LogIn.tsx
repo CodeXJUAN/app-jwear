@@ -11,4 +11,6 @@ const LogIn = () => {
 
 export default LogIn
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+});
