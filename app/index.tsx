@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, TouchableOpacity} from 'react-native';
+import { SafeAreaView, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import Slider from './components/Slider';
 import { ImageSlider } from './data/SliderData';
@@ -7,6 +7,7 @@ import { ImageSlider } from './data/SliderData';
 const App: React.FC = () => {
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
             <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
                 <View style={styles.header}>
                     <Image style={styles.logo}
@@ -17,8 +18,8 @@ const App: React.FC = () => {
                     <Slider itemList={ImageSlider}/>
                 </View>
                 <View style={styles.div2}>
-                    <Text>Welcome to JWEAR!</Text>
-                    <Text>Your freestyle design in one App</Text>
+                    <Text style={styles.text1}>Welcome to JWEAR!</Text>
+                    <Text style={styles.text2}>Your freestyrle design in one App</Text>
                 </View>
                 <View style={styles.footer}>
                     <TouchableOpacity      
@@ -41,8 +42,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
     },
     logo: {
-        width: 100,
-        height: 100,
+        width: 120,
+        height: 120,
     },
     header: {
         flex: 1,
@@ -53,11 +54,21 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        marginBottom: 10,
     },
     div2: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        marginBottom: 15,
+    },
+    text1: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 5,
+    },
+    text2: {
+        fontSize: 18,
     },
     footer: {
         flex: 1,
@@ -74,6 +85,8 @@ const styles = StyleSheet.create({
     textbutton: {
         color: '#ffffff',
         textAlign: 'center',
+        fontSize: 18,
+        fontWeight: 'bold',
     },
 });
 

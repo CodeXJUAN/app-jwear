@@ -49,9 +49,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         gap: 20,
-        width: width,
-        marginTop: 30,
-        marginBottom: 40,    
+        width: width, 
     },
     image: {
         width: 250,
