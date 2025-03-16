@@ -37,8 +37,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
     },
     logo: {
-        width: 120,
-        height: 120,
+        width: 100,
+        height: 80,
+        marginBottom: 10,
     },
     header: {
         flex: 1,
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     textbutton: {
-        color: '#ffffff',
+        color: '#fff',
         textAlign: 'center',
         fontSize: 18,
         fontWeight: 'bold',

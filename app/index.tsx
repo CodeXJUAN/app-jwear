@@ -5,7 +5,7 @@ import StackNavigator from './navigation/StackNavigator';
 const Layout = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#fff" />
+      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
       <StackNavigator />
     </SafeAreaView>
   );
