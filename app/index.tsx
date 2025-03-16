@@ -4,14 +4,14 @@ import {StyleSheet, Text, View, Image} from 'react-native';
 import Slider from './components/Slider';
 import { ImageSlider } from './data/SliderData';
 
-const App: React.FC = () => {
+const App = () => {
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
             <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
                 <View style={styles.header}>
                     <Image style={styles.logo}
-                        source={require("./../assets/images/logo entero blanco.png")}
+                        source={require("./../assets/images/logo_entero_blanco.png")}
                     />
                 </View>
                 <View style={styles.div1}>
