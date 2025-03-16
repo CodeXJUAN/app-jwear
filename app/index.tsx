@@ -1,6 +1,8 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, TouchableOpacity} from 'react-native';
 import {StyleSheet, Text, View, Image} from 'react-native';
+import Slider from './components/Slider';
+import { ImageSlider } from './data/SliderData';
 
 const App: React.FC = () => {
     return (
@@ -11,10 +13,10 @@ const App: React.FC = () => {
                         source={require("./../assets/images/logo entero blanco.png")}
                     />
                 </View>
-                <View>
-                    <Image></Image>
-                </View>
                 <View style={styles.div1}>
+                    <Slider itemList={ImageSlider}/>
+                </View>
+                <View style={styles.div2}>
                     <Text>Welcome to JWEAR!</Text>
                     <Text>Your freestyle design in one App</Text>
                 </View>
@@ -48,6 +50,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     div1: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    div2: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
