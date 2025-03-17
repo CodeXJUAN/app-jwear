@@ -1,6 +1,6 @@
 import { Dimensions, StyleSheet, View, ViewToken } from 'react-native'
 import React, { useState, useRef, useEffect } from 'react'
-import { ImageSliderType } from '../data/SliderData'
+import { ImageSliderType } from '../../data/SliderData'
 import Animated, { scrollTo, useSharedValue, useAnimatedScrollHandler, useAnimatedRef, useDerivedValue } from 'react-native-reanimated'
 import SliderItem from './SliderItem'
 import Pagination from './Pagination'

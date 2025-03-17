@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView, TouchableOpacity} from 'react-native';
 import {StyleSheet, Text, View, Image} from 'react-native';
-import Slider from '@/app/components/Slider';
+import Slider from '@/app/components/SliderComponents/Slider';
 import { ImageSlider } from '@/app/data/SliderData';
 import { NavigationProp } from '@react-navigation/native';
 
