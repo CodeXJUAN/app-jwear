@@ -1,4 +1,4 @@
-import { Dimensions ,View , StyleSheet, Image } from 'react-native'
+import { Dimensions, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import { ImageSliderType } from '../../data/SliderData'
 import Animated, { Extrapolation, interpolate, SharedValue, useAnimatedStyle } from 'react-native-reanimated';
