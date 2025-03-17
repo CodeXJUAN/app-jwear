@@ -24,7 +24,9 @@ const LogIn = ({ navigation }: { navigation: NavigationProp<any> }) => {
             <Text style={styles.h2}>Password</Text>
             <TextInput style={styles.input}></TextInput>
         </View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity 
+        style={styles.button}
+        onPress={() => navigation.navigate('Home')}>
             <Text style={styles.buttonText1}>LogIn</Text>
         </TouchableOpacity>
       </View>
