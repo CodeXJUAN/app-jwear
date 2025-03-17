@@ -1,16 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Image, View } from 'react-native'
 import React from 'react'
 
-type Props = {}
 
-const Logo = (props: Props) => {
+const Logo = () => {
   return (
     <View>
-      <Text>Logo</Text>
+        <Image style={styles.logo}
+            source={require("./../../assets/images/logo_entero_blanco.png")}
+        />
     </View>
   )
 }
 
 export default Logo
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    logo: {
+        width: 130,
+        height: 100,
+    }
+})

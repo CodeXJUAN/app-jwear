@@ -4,20 +4,38 @@ export type ImageSliderType = {
     image: ImageSourcePropType;
 };
 
-export const ImageSlider = [
+export const WelcomeSlider = [
     {
-        image: require("@/assets/images/slider/foto1.jpg"),
+        image: require("@/assets/images/slider/welcome/foto1.jpg"),
     },
     {
-        image: require("@/assets/images/slider/foto2.jpg"),
+        image: require("@/assets/images/slider/welcome/foto2.jpg"),
     },
     {
-        image: require("@/assets/images/slider/foto3.jpg"),
+        image: require("@/assets/images/slider/welcome/foto3.jpg"),
     },
     {
-        image: require("@/assets/images/slider/foto4.jpg"),
+        image: require("@/assets/images/slider/welcome/foto4.jpg"),
     },
     {
-        image: require("@/assets/images/slider/foto5.jpg"),
+        image: require("@/assets/images/slider/welcome/foto5.jpg"),
+    }
+];
+
+export const HomeSlider = [
+    {
+        image: require("@/assets/images/slider/home/foto1.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto2.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto3.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto4.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto5.jpg"),
     }
 ];

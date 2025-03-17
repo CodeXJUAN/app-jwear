@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, TouchableOpacity} from 'react-native';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import Slider from '@/app/components/SliderComponents/Slider';
-import { ImageSlider } from '@/app/data/SliderData';
+import { WelcomeSlider } from '@/app/data/SliderData';
 import { NavigationProp } from '@react-navigation/native';
 
 const Welcome = ({ navigation }: { navigation: NavigationProp<any> }) => {
@@ -14,7 +14,7 @@ const Welcome = ({ navigation }: { navigation: NavigationProp<any> }) => {
                 />
             </View>
             <View style={styles.div1}>
-                <Slider itemList={ImageSlider}/>
+                <Slider itemList={WelcomeSlider}/>
             </View>
             <View style={styles.div2}>
                 <Text style={styles.text1}>Welcome to JWEAR!</Text>

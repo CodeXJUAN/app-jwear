@@ -48,12 +48,12 @@ const styles = StyleSheet.create({
     itemContainer: {
         justifyContent: 'center',
         alignItems: 'center',
-        gap: 20,
         width: width, 
+        gap: 20,
     },
     image: {
-        width: 250,
-        height: 400,
+        width: 275,
+        height: 380,
         borderRadius: 20,
     }
 })
