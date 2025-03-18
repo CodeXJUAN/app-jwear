@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
 import Logo from '@/app/components/Logo'
-import Slider from '@/app/components/SliderComponents/Slider';
+import Slider from '@/app/components/SliderHome/Slider';
 import { HomeSlider } from '@/app/data/SliderData';
 
 const Home = () => {
