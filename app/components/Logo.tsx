@@ -16,7 +16,8 @@ export default Logo
 
 const styles = StyleSheet.create({
     logo: {
-        width: 130,
+        width: 160,
         height: 100,
+        objectFit: 'contain' 
     }
 })

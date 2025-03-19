@@ -46,14 +46,16 @@ export default SliderItem
 
 const styles = StyleSheet.create({
     itemContainer: {
+        marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         width: width, 
         gap: 20,
     },
     image: {
-        width: 275,
-        height: 380,
+        width: '100%',
+        height: 300,
         borderRadius: 20,
+        objectFit: 'fill',
     }
 })
