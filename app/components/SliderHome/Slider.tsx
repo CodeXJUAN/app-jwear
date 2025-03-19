@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect } from 'react'
 import { ImageSliderType } from '../../data/SliderData'
 import Animated, { scrollTo, useSharedValue, useAnimatedScrollHandler, useAnimatedRef, useDerivedValue } from 'react-native-reanimated'
 import SliderItem from './SliderItem'
-import Pagination from './Pagination'
 
 
 type Props = {
@@ -84,11 +83,6 @@ const Slider = ({itemList} : Props) => {
                 onScrollEndDrag={() => {
                     setIsAutoPlay(true);
                 }}
-            />
-            <Pagination 
-                items={itemList} 
-                scrollX={scrollX} 
-                paginationIndex={paginationIndex} 
             />
         </View>
     )

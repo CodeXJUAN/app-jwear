@@ -16,18 +16,10 @@ const SliderItem = ({index, item, scrollX}: Props) => {
         return {
             transform: [
                 {
-                    translateX: interpolate(
-                        scrollX.value,
-                        [(index - 1) * width, index * width, (index + 1) * width],
-                        [-width * 0.25, 0, width*0.25],
-                        Extrapolation.CLAMP
-                    ), 
-                },
-                {
                     scale: interpolate(
                         scrollX.value,
                         [(index - 1) * width, index * width, (index + 1) * width],
-                        [0.9, 1, 0.9],
+                        [0.95, 1, 0.95],
                         Extrapolation.CLAMP
                     ),
                 }
@@ -54,7 +46,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: 300,
+        height: 375,
         borderRadius: 20,
         objectFit: 'fill',
     }

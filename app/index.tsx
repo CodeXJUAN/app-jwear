@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
 import StackNavigator from './navigation/StackNavigator';
 
+
 const Layout = () => {
   return (
     <SafeAreaView style={styles.container}>

@@ -37,5 +37,20 @@ export const HomeSlider = [
     },
     {
         image: require("@/assets/images/slider/home/foto5.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto6.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto7.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto8.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto9.jpg"),
+    },
+    {
+        image: require("@/assets/images/slider/home/foto10.jpg"),
     }
 ];
