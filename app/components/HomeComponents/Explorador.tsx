@@ -1,24 +1,33 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { NavigationProp } from '@react-navigation/native';
 
 type Props = {}
 
-const Explorador = (props: Props) => {
+const Explorador = ({ navigation }: { navigation: NavigationProp<any> }) => {
   return (
     <View style={styles.container}>
       <View style={styles.explorador}>
-        <View style={styles.iconView}>
+        <TouchableOpacity 
+          style={styles.iconView}
+          onPress={() => navigation.navigate('Home')}>
           <Image style={styles.icon} source={require("@/assets/images/icons/casa.png")}/>
-        </View>
-        <View style={styles.iconView}>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.iconView}
+          onPress={() => navigation.navigate('Camisetas')}>
           <Image style={styles.icon} source={require("@/assets/images/icons/camiseta.png")}/>
-        </View>
-        <View style={styles.iconView}>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.iconView}
+          onPress={() => navigation.navigate('Hoddies')}>
           <Image style={styles.icon} source={require("@/assets/images/icons/sudadera.png")}/>
-        </View>
-        <View style={styles.iconView}>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.iconView}
+          onPress={() => navigation.navigate('Sweaters')}>
           <Image style={styles.icon} source={require("@/assets/images/icons/sweater.png")}/>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   )

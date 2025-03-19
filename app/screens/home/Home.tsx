@@ -4,20 +4,28 @@ import Logo from '@/app/components/Logo'
 import Slider from '@/app/components/SliderHome/Slider';
 import { HomeSlider } from '@/app/data/SliderData';
 import Explorador from '@/app/components/HomeComponents/Explorador';
+import Links from '@/app/components/HomeComponents/Links';
+import ProdCard from '@/app/components/ProdComponents/ProdCard';
+import CateCard from '@/app/components/HomeComponents/CateCard';
+import { NavigationProp } from '@react-navigation/native';
 
-const Home = () => {
+const Home = ({ navigation }: { navigation: NavigationProp<any> }) => {
   return (
     <View style={styles.container}>
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
-        <View>
+        <View style={styles.header}>
           <Logo />
+          <Links/>
+        </View>
+        <View>
           <Slider itemList={HomeSlider}/>
         </View>
         <View>
-          <Text></Text>
+          <ProdCard />
+          <CateCard />
         </View>
       </ScrollView>
-      <Explorador />
+      <Explorador navigation={navigation} />
     </View>
   )
 }
@@ -34,5 +42,10 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingBottom: 100, 
+  },
+  header: {
+    alignItems:'center',
+    flexDirection:'row',
+    justifyContent:'space-between',
   }
 })
