@@ -1,16 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import Contact from '@/app/screens/about/contact';
+import Home from '@/app/screens/home/Home';
+import AboutUs from '@/app/screens/about/aboutus';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import React from 'react';
 
-type Props = {}
 
-const Links = (props: Props) => {
+const Drawer = createDrawerNavigator();
+
+function MyDrawer() {
   return (
-    <View>
-      <Text>Links</Text>
-    </View>
-  )
+    <Drawer.Navigator>
+      <Drawer.Screen name="Home" component={Home} />
+      <Drawer.Screen name="Contact" component={Contact} />
+      <Drawer.Screen name="AboutUs" component={AboutUs} />
+    </Drawer.Navigator>
+  );
 }
 
-export default Links
-
-const styles = StyleSheet.create({})
+export default MyDrawer;

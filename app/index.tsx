@@ -1,8 +1,9 @@
+import '../gesture-handler'
 import React from 'react';
 import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
 import StackNavigator from './navigation/StackNavigator';
 
-const Layout = () => {
+const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
@@ -18,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Layout;
+export default App;
