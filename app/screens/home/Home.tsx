@@ -8,8 +8,6 @@ import Links from '@/app/components/HomeComponents/Links';
 import ProdCard from '@/app/components/ProdComponents/ProdCard';
 import CateCard from '@/app/components/HomeComponents/CateCard';
 import { NavigationProp } from '@react-navigation/native';
-import '@fontsource-variable/outfit';
-
 
 const Home = ({ navigation }: { navigation: NavigationProp<any> }) => {
   return (
