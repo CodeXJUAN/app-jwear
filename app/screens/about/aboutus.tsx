@@ -3,14 +3,14 @@ import React from 'react'
 
 type Props = {}
 
-const aboutus = (props: Props) => {
+const AboutUs = (props: Props) => {
   return (
     <View>
-      <Text>aboutus</Text>
+      <Text>AboutUs</Text>
     </View>
   )
 }
 
-export default aboutus
+export default AboutUs
 
 const styles = StyleSheet.create({})

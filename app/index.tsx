@@ -1,14 +1,17 @@
 import '../gesture-handler'
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
+import { SafeAreaView, StatusBar, StyleSheet, AppRegistry } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import StackNavigator from './navigation/StackNavigator';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
-      <StackNavigator />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+        <StackNavigator />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
@@ -18,5 +21,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
 });
+
+// Register the main component
+AppRegistry.registerComponent('app-jwear', () => App);
 
 export default App;

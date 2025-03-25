@@ -1,6 +1,6 @@
-import Contact from '@/app/screens/about/contact';
+import Contact from '@/app/screens/about/Contact';
 import Home from '@/app/screens/home/Home';
-import AboutUs from '@/app/screens/about/aboutus';
+import AboutUs from '@/app/screens/about/Aboutus';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
 
