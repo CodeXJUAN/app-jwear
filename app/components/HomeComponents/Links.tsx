@@ -1,9 +1,6 @@
-import Contact from '@/app/screens/about/Contact';
-import AboutUs from '@/app/screens/about/Aboutus';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Icon } from "@iconify/react";
 import React from 'react';
-import { TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const Links = () => {
