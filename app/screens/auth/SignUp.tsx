@@ -8,7 +8,7 @@ const SignUp = ({ navigation }: { navigation: NavigationProp<any> }) => {
     <ScrollView style={styles.container}>
       <View style={styles.div1}>
         <Image style={styles.logo}
-            source={require("./../../../assets/images/logo_entero_blanco.png")}
+            source={require("@/assets/images/logo_entero_blanco.png")}
         />
         <Text style={styles.hiagain}>Welcome!</Text>
       </View>

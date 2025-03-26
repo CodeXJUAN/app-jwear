@@ -1,20 +1,31 @@
 import Contact from '@/app/screens/about/Contact';
-import Home from '@/app/screens/home/Home';
 import AboutUs from '@/app/screens/about/Aboutus';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { Icon } from "@iconify/react";
 import React from 'react';
+import { TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-
-const Drawer = createDrawerNavigator();
-
-function MyDrawer() {
+const Links = () => {
+  const navigation = useNavigation();
+  
   return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="Contact" component={Contact} />
-      <Drawer.Screen name="AboutUs" component={AboutUs} />
-    </Drawer.Navigator>
+    <TouchableOpacity 
+      style={styles.container}
+      onPress={() => (navigation as any).openDrawer()}>
+        <Icon icon="ic:round-menu"/>
+    </TouchableOpacity>
   );
-}
+};
 
-export default MyDrawer;
+const styles = StyleSheet.create({
+  container: {
+    padding: 10,
+  },
+  icon: {
+    width: 24,
+    height: 24,
+  }
+});
+
+export default Links;

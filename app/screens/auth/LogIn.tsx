@@ -1,5 +1,4 @@
-import { ScrollView, StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Button } from 'react-native'
-import { Link } from 'expo-router'
+import { ScrollView, StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { NavigationProp } from '@react-navigation/native';
 
@@ -8,7 +7,7 @@ const LogIn = ({ navigation }: { navigation: NavigationProp<any> }) => {
     <ScrollView style={styles.container}>
       <View style={styles.div1}>
         <Image style={styles.logo}
-            source={require("./../../../assets/images/logo_entero_blanco.png")}
+            source={require("@/assets/images/logo_entero_blanco.png")}
         />
         <Text style={styles.hiagain}>Hi Again!</Text>
       </View>

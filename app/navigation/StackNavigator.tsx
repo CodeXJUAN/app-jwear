@@ -14,7 +14,12 @@ const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="Welcome">
+    <Stack.Navigator 
+      initialRouteName="Welcome"
+      screenOptions={{
+        headerShown: false, // Oculta el header para todas las pantallas
+      }}
+    >
       <Stack.Screen name="Welcome" component={Welcome} />
       <Stack.Screen name="LogIn" component={LogIn} />
       <Stack.Screen name="SignUp" component={SignUp} />
