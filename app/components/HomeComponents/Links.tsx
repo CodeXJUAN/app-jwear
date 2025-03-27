@@ -1,23 +1,18 @@
-import { Icon } from "@iconify/react";
 import React from 'react';
-import { TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { TouchableOpacity, StyleSheet , Image} from 'react-native';
 
 const Links = () => {
-  const navigation = useNavigation();
-  
   return (
     <TouchableOpacity 
-      style={styles.container}
-      onPress={() => (navigation as any).openDrawer()}>
-        <Icon icon="ic:round-menu"/>
+      style={styles.container}>
+      <Image style={styles.icon} source={require("@/assets/images/icons/menu.png")}/>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    paddingRight: 30,
   },
   icon: {
     width: 24,
